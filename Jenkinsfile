@@ -71,6 +71,7 @@ stage('Deploiement en dev'){
                 cp fastapi/values.yaml values.yml
                 cat values.yml
                 sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
+                kubectl get namespace dev || kubectl create namespace dev
                 helm upgrade --install app fastapi --values=values.yml --namespace dev
                 '''
                 }
@@ -92,7 +93,6 @@ stage('Deploiement en staging'){
                 cp fastapi/values.yaml values.yml
                 cat values.yml
                 sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
-                kubectl get namespace dev || kubectl create namespace dev
                 helm upgrade --install app fastapi --values=values.yml --namespace staging
                 '''
                 }
