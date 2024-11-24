@@ -127,4 +127,3 @@ stage('Deploiement en staging'){
 
         }
 }
-}
