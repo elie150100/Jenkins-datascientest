@@ -128,4 +128,3 @@ stage('Deploiement en staging'){
         }
 
 }
-}
