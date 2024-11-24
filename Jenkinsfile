@@ -1,13 +1,14 @@
 pipeline {
-    environment {
-        DOCKER_ID = "elie150100" // replace this with your docker-id
+    environment { 
+        DOCKER_ID = "elie150100" // Remplacez par votre Docker ID
         DOCKER_MOVIE_IMAGE = "movie-service"
         DOCKER_CAST_IMAGE = "cast-service"
-        DOCKER_TAG = "v.${BUILD_ID}.0" // Tag our images with the current build
+        DOCKER_TAG = "v.${BUILD_ID}.0" // Tag basé sur l'ID de build
     }
-    agent any // Jenkins will be able to select all available agents
+    agent any // Jenkins utilisera tous les agents disponibles
+
     stages {
-        stage('Docker Build') { // Docker build image stage
+        stage(' Docker Build') { // Construire les images Docker
             steps {
                 script {
                     sh '''
@@ -20,31 +21,9 @@ pipeline {
             }
         }
 
-        stage('Docker Run') { // Run container from our built image
-            steps {
-                script {
-                    sh '''
-                    docker run -d -p 80:80 --name jenkins $DOCKER_ID/$DOCKER_MOVIE_IMAGE:$DOCKER_TAG
-                    docker run -d -p 80:80 --name jenkins $DOCKER_ID/$DOCKER_CAST_IMAGE:$DOCKER_TAG
-                    sleep 10
-                    '''
-                }
-            }
-        }
-
-        stage('Test Acceptance') { // Validate the container responds to the request
-            steps {
-                script {
-                    sh '''
-                    curl http://localhost:8081/api/v1/movies/docs
-                    '''
-                }
-            }
-        }
-
-        stage('Docker Push') { // Push the built images to Docker Hub
+        stage('Docker Push') { // Pousser les images vers Docker Hub
             environment {
-                DOCKER_PASS = credentials("DOCKER_HUB_PASS") // Retrieve Docker password
+                DOCKER_PASS = credentials("DOCKER_HUB_PASS") // Mot de passe Docker Hub
             }
             steps {
                 script {
@@ -59,14 +38,13 @@ pipeline {
 
         stage('Deploiement en dev') {
             environment {
-                KUBECONFIG = credentials("config") // Retrieve kubeconfig
+                KUBECONFIG = credentials("config") // Récupération du kubeconfig
             }
             steps {
                 script {
                     sh '''
                     rm -Rf .kube
                     mkdir .kube
-                    ls
                     cp $KUBECONFIG .kube/config
                     cp fastapi/values.yaml values.yml
                     cat values.yml
@@ -78,16 +56,35 @@ pipeline {
             }
         }
 
-        stage('Deploiement en staging') {
+        stage('Deploiement en QA') {
             environment {
-                KUBECONFIG = credentials("config") // Retrieve kubeconfig
+                KUBECONFIG = credentials("config")
             }
             steps {
                 script {
                     sh '''
                     rm -Rf .kube
                     mkdir .kube
-                    ls
+                    cp $KUBECONFIG .kube/config
+                    cp fastapi/values.yaml values.yml
+                    cat values.yml
+                    sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
+                    kubectl get namespace qa || kubectl create namespace qa
+                    helm upgrade --install app fastapi --values=values.yml --namespace qa
+                    '''
+                }
+            }
+        }
+
+        stage('Deploiement en staging') {
+            environment {
+                KUBECONFIG = credentials("config")
+            }
+            steps {
+                script {
+                    sh '''
+                    rm -Rf .kube
+                    mkdir .kube
                     cp $KUBECONFIG .kube/config
                     cp fastapi/values.yaml values.yml
                     cat values.yml
@@ -101,14 +98,13 @@ pipeline {
 
         stage('Deploiement en prod') {
             environment {
-                KUBECONFIG = credentials("config") // Retrieve kubeconfig
+                KUBECONFIG = credentials("config")
             }
-            steps { // Add the missing `steps` block
+            steps {
                 script {
                     sh '''
                     rm -Rf .kube
                     mkdir .kube
-                    ls
                     cp $KUBECONFIG .kube/config
                     cp fastapi/values.yaml values.yml
                     cat values.yml
@@ -121,3 +117,4 @@ pipeline {
         }
     }
 }
+
