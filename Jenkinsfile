@@ -6,6 +6,23 @@ pipeline {
         DOCKER_TAG = "v.${BUILD_ID}.0" // Tag basé sur l'ID de build
     }
     agent any // Jenkins utilisera tous les agents disponibles
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Get Git Branch') {
+            steps {
+                script {
+                    def branch = sh(script: "git rev-parse --abbrev-ref HEAD", returnStdout: true).trim()
+                    echo "Current Git Branch: ${branch}"
+                }
+            }
+        }
+    }
+}
+
 
     stages {
         stage('Docker Build') { 
