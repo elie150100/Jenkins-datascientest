@@ -107,7 +107,7 @@ pipeline {
         stage('Deploiement en prod') {
             when { 
                 allOf { 
-                    branch 'master' 
+                    branch 'main' 
                     expression { 
                         return currentBuild.result == null // Ne pas lancer automatiquement
                     } 
