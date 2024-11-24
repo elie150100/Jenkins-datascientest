@@ -103,6 +103,14 @@ pipeline {
                 }
             }
         }
+        stage('Check Branch Name') {
+    steps {
+        script {
+            echo "Current Branch: ${env.BRANCH_NAME}"
+        }
+    }
+}
+
 
         stage('Deploiement en prod') {
             when { 
