@@ -104,7 +104,7 @@ stage('Deploiement en staging'){
             }
 
         }
-  stage('Deploiement en prod'){
+stage('Deploiement en prod'){
         environment
         {
         KUBECONFIG = credentials("config") // we retrieve  kubeconfig from secret file called config saved on jenkins
