@@ -7,20 +7,28 @@ pipeline {
     }
     agent any // Jenkins utilisera tous les agents disponibles
     
+    
 
-    stages {
-        stage('Docker Build') { 
+        stages {
+            stage('Check Workspace') {
+                steps {
+                    sh "pwd"
+                    sh "ls -al"
+        }
+    }
+}
+
+
+        stage('Docker Push') { 
+            environment {
+                DOCKER_PASS = credentials("DOCKER_HUB_PASS") // Mot de passe Docker Hub
+            }
             steps {
                 script {
                     sh '''
-                    docker rm -f jenkins || true
-                    docker build -t $DOCKER_ID/$DOCKER_MOVIE_IMAGE:$DOCKER_TAG .
-                    docker build -t $DOCKER_ID/$DOCKER_CAST_IMAGE:$DOCKER_TAG .
-                    sleep 6
-                    '''
-                }
-            }
-        }
+                    docker login -u $DOCKER_ID -p $DOCKER_PASS
+                    doc
+
 
         stage('Docker Push') { 
             environment {
