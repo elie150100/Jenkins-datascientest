@@ -55,7 +55,7 @@ pipeline {
                     cp fastapiapp/values.yaml values.yml
                     sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
                     kubectl get namespace dev || kubectl create namespace dev
-                    helm upgrade --install test-1 . --values=values.yml --namespace dev
+                    helm upgrade --install test-1 fastapiapp --values=values.yml --namespace dev
                     '''
                 }
             }
@@ -74,7 +74,7 @@ pipeline {
                     cp fastapiapp/values.yaml values.yml
                     sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
                     kubectl get namespace qa || kubectl create namespace qa
-                    helm upgrade --install test-1 . --values=values.yml --namespace qa
+                    helm upgrade --install test-1 fastapiapp --values=values.yml --namespace qa
                     '''
                 }
             }
@@ -93,7 +93,7 @@ pipeline {
                     cp fastapiapp/values.yaml values.yml
                     sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
                     kubectl get namespace staging || kubectl create namespace staging
-                    helm upgrade --install test-1 . --values=values.yml --namespace staging
+                    helm upgrade --install test-1 fastapiapp --values=values.yml --namespace staging
                     '''
                 }
             }
