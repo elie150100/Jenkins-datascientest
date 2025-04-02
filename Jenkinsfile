@@ -52,7 +52,7 @@ pipeline {
                     rm -Rf .kube
                     mkdir .kube
                     cp $KUBECONFIG .kube/config
-                    cp fastapi/values.yaml values.yml
+                    cp fastapiapp/values.yaml values.yml
                     sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
                     kubectl get namespace dev || kubectl create namespace dev
                     helm upgrade --install test-1 . --values=values.yml --namespace dev
@@ -71,7 +71,7 @@ pipeline {
                     rm -Rf .kube
                     mkdir .kube
                     cp $KUBECONFIG .kube/config
-                    cp fastapi/values.yaml values.yml
+                    cp fastapiapp/values.yaml values.yml
                     sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
                     kubectl get namespace qa || kubectl create namespace qa
                     helm upgrade --install test-1 . --values=values.yml --namespace qa
@@ -90,7 +90,7 @@ pipeline {
                     rm -Rf .kube
                     mkdir .kube
                     cp $KUBECONFIG .kube/config
-                    cp fastapi/values.yaml values.yml
+                    cp fastapiapp/values.yaml values.yml
                     sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
                     kubectl get namespace staging || kubectl create namespace staging
                     helm upgrade --install test-1 . --values=values.yml --namespace staging
@@ -134,7 +134,7 @@ pipeline {
                     rm -Rf .kube
                     mkdir .kube
                     cp $KUBECONFIG .kube/config
-                    cp fastapi/values.yaml values.yml
+                    cp fastapiapp/values.yaml values.yml
                     sed -i "s+tag.*+tag: ${DOCKER_TAG}+g" values.yml
                     kubectl get namespace prod || kubectl create namespace prod
                     helm upgrade --install test-1 . --values=values.yml --namespace prod
