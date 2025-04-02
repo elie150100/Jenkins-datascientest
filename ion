@@ -1,0 +1,2494 @@
+-- Logs begin at Wed 2023-04-12 09:15:49 UTC, end at Wed 2025-04-02 11:53:41 UTC. --
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.209+0000 [id=30]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Milestone Step v119.vdfdc43fc3b_9a_ (pipeline-milestone-step)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Milestone Step (pipeline-milestone-step 119.vdfdc43fc3b_9a_)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: API (workflow-api 1322.v857eeeea_9902)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.211+0000 [id=29]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Input Step v477.v339683a_8d55e (pipeline-input-step)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Input Step (pipeline-input-step 477.v339683a_8d55e)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: API (workflow-api 1322.v857eeeea_9902)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.213+0000 [id=28]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline Graph Analysis Plugin v216.vfd8b_ece330ca_ (pipeline-graph-analysis)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline Graph Analysis Plugin (pipeline-graph-analysis 216.vfd8b_ece330ca_)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: API (workflow-api 1322.v857eeeea_9902)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.215+0000 [id=31]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: REST API Plugin v2.34 (pipeline-rest-api)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: REST API Plugin (pipeline-rest-api 2.34)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: API (workflow-api 1322.v857eeeea_9902)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.217+0000 [id=29]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Jenkins Workspace Cleanup Plugin v0.46 (ws-cleanup)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Jenkins Workspace Cleanup Plugin (ws-cleanup 0.46)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Matrix Project Plugin (matrix-project 822.824.v14451b_c0fd42)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.221+0000 [id=30]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Build Step v540.vb_e8849e1a_b_d8 (pipeline-build-step)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Build Step (pipeline-build-step 540.vb_e8849e1a_b_d8)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: API (workflow-api 1322.v857eeeea_9902)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.225+0000 [id=28]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Model API v2.2218.v56d0cda_37c72 (pipeline-model-api)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Model API (pipeline-model-api 2.2218.v56d0cda_37c72)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Joda Time API Plugin (joda-time-api 2.12.7-29.v5a_b_e3a_82269a_)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.227+0000 [id=29]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Declarative Extension Points API v2.2218.v56d0cda_37c72 (pipeline-model-extensions)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Declarative Extension Points API (pipeline-model-extensions 2.2218.v56d0cda_37c72)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: Groovy (workflow-cps 3996.va_f5c1799f978)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.231+0000 [id=31]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Declarative v2.2218.v56d0cda_37c72 (pipeline-model-definition)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Declarative (pipeline-model-definition 2.2218.v56d0cda_37c72)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: Groovy Libraries (pipeline-groovy-lib 744.v5b_556ee7c253)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.232+0000 [id=30]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline v600.vb_57cdd26fdd7 (workflow-aggregator)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline (workflow-aggregator 600.vb_57cdd26fdd7)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: Groovy Libraries (pipeline-groovy-lib 744.v5b_556ee7c253)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.234+0000 [id=28]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Ant Plugin v497.v94e7d9fffa_b_9 (ant)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Ant Plugin (ant 497.v94e7d9fffa_b_9)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Structs Plugin (structs 338.v848422169819)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.236+0000 [id=30]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin SSH Build Agents plugin v2.973.v0fa_8c0dea_f9f (ssh-slaves)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: SSH Build Agents plugin (ssh-slaves 2.973.v0fa_8c0dea_f9f)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Credentials Plugin (credentials 1380.va_435002fa_924)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.240+0000 [id=29]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Matrix Authorization Strategy Plugin v3.2.3 (matrix-auth)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Matrix Authorization Strategy Plugin (matrix-auth 3.2.3)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.242+0000 [id=31]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Stage View Plugin v2.34 (pipeline-stage-view)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Stage View Plugin (pipeline-stage-view 2.34)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: REST API Plugin (pipeline-rest-api 2.34)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.245+0000 [id=28]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Email Extension Plugin v2.105 (email-ext)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Email Extension Plugin (email-ext 2.105)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Credentials Plugin (credentials 1380.va_435002fa_924)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.256+0000 [id=30]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin GitHub plugin v1.40.0 (github)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: GitHub plugin (github 1.40.0)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Credentials Plugin (credentials 1380.va_435002fa_924)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.414.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.265+0000 [id=31]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Build Timeout v1.32 (build-timeout)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Build Timeout (build-timeout 1.32)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.401.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: Token Macro Plugin (token-macro 400.v35420b_922dcb_)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:50.268+0000 [id=29]        SEVERE        jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin GitHub Branch Source Plugin v1793.v1831e9c68d77 (github-branch-source)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: GitHub Branch Source Plugin (github-branch-source 1793.v1831e9c68d77)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.414.3) or higher required
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:  - Failed to load: GitHub plugin (github 1.40.0)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager$2$1$1.run(PluginManager.java:555)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+Apr 02 11:31:50 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:31:57 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:57.246+0000 [id=28]        INFO        jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+Apr 02 11:31:57 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:57.391+0000 [id=28]        INFO        jenkins.InitReactorRunner$1#onAttained: Started all plugins
+Apr 02 11:31:57 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:31:57.440+0000 [id=29]        INFO        jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:32:00.535+0000 [id=29]        INFO        jenkins.InitReactorRunner$1#onAttained: System config loaded
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:32:00.536+0000 [id=29]        INFO        jenkins.InitReactorRunner$1#onAttained: System config adapted
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:32:00.537+0000 [id=29]        INFO        jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:32:00.539+0000 [id=28]        INFO        jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:32:00.853+0000 [id=29]        INFO        jenkins.install.SetupWizard#init:
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: *************************************************************
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: *************************************************************
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: *************************************************************
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: Jenkins initial setup is required. An admin user has been created and a password generated.
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: Please use the following password to proceed to installation:
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: 58e4cfc34f5c45f0a88849c07fbbff3e
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: This may also be found at: /var/lib/jenkins/secrets/initialAdminPassword
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: *************************************************************
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: *************************************************************
+Apr 02 11:32:00 ip-172-31-7-33 jenkins[488]: *************************************************************
+Apr 02 11:32:01 ip-172-31-7-33 jenkins[488]: WARNING: An illegal reflective access operation has occurred
+Apr 02 11:32:01 ip-172-31-7-33 jenkins[488]: WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/var/cache/jenkins/war/WEB-INF/lib/groovy-all-2.4.21.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+Apr 02 11:32:01 ip-172-31-7-33 jenkins[488]: WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+Apr 02 11:32:01 ip-172-31-7-33 jenkins[488]: WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+Apr 02 11:32:01 ip-172-31-7-33 jenkins[488]: WARNING: All illegal access operations will be denied in a future release
+Apr 02 11:32:24 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:32:24.631+0000 [id=30]        INFO        jenkins.InitReactorRunner$1#onAttained: Completed initialization
+Apr 02 11:32:24 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:32:24.663+0000 [id=22]        INFO        hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+Apr 02 11:32:24 ip-172-31-7-33 systemd[1]: Started Jenkins Continuous Integration Server.
+-- Subject: A start job for unit jenkins.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished successfully.
+-- 
+-- The job identifier is 161.
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.218+0000 [id=17]        INFO        hudson.PluginManager#install: Starting installation of a batch of 0 plugins plus their dependencies
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.230+0000 [id=72]        INFO        h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.357+0000 [id=74]        INFO        jenkins.InitReactorRunner$1#onAttained: Started initialization
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.359+0000 [id=75]        INFO        jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.360+0000 [id=75]        INFO        jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.361+0000 [id=75]        INFO        jenkins.InitReactorRunner$1#onAttained: Started all plugins
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.363+0000 [id=76]        INFO        jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.363+0000 [id=76]        INFO        jenkins.InitReactorRunner$1#onAttained: System config loaded
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.364+0000 [id=76]        INFO        jenkins.InitReactorRunner$1#onAttained: System config adapted
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.364+0000 [id=76]        INFO        jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.364+0000 [id=76]        INFO        jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.364+0000 [id=76]        INFO        jenkins.InitReactorRunner$1#onAttained: Completed initialization
+Apr 02 11:40:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:40:22.366+0000 [id=72]        INFO        h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 0 plugins in 0.14 sec
+Apr 02 11:43:43 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:43.835+0000 [id=17]        INFO        hudson.PluginManager#install: Starting installation of a batch of 4 plugins plus their dependencies
+Apr 02 11:43:43 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:43.840+0000 [id=81]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of caffeine-api on behalf of elie1
+Apr 02 11:43:43 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:43.841+0000 [id=81]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading caffeine-api
+Apr 02 11:43:44 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:44.873+0000 [id=81]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of durable-task on behalf of elie1
+Apr 02 11:43:44 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:44.875+0000 [id=81]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading durable-task
+Apr 02 11:43:45 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:45.900+0000 [id=81]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of cloudbees-folder on behalf of elie1
+Apr 02 11:43:45 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:45.901+0000 [id=81]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading cloudbees-folder
+Apr 02 11:43:46 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:46.413+0000 [id=81]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of mailer on behalf of elie1
+Apr 02 11:43:46 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:43:46.420+0000 [id=81]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mailer
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.055+0000 [id=15]        INFO        hudson.PluginManager#install: Starting installation of a batch of 3 plugins plus their dependencies
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.058+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mina-sshd-api-core for plugin git-client
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.062+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mina-sshd-api-common for plugin mina-sshd-api-core
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.063+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of credentials for plugin git-client
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.063+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of structs for plugin credentials
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.064+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ssh-credentials for plugin git-client
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.065+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of gson-api for plugin git-client
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.069+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of credentials-binding for plugin git
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.070+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-step-api for plugin credentials-binding
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.071+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of plain-credentials for plugin credentials-binding
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.072+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-scm-step for plugin git
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.072+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of scm-api for plugin git
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.074+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of asm-api for plugin scm-api
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.071+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of mina-sshd-api-common on behalf of elie1
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.076+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mina-sshd-api-common
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.079+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-support for plugin workflow-job
+Apr 02 11:44:15 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:15.080+0000 [id=15]        INFO        hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-api for plugin workflow-support
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:16.016+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install mina-sshd-api-common
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Mina SSHD API :: Common (mina-sshd-api-common 2.14.0-143.v2b_362fc39576)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install mina-sshd-api-common plugin
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:16.017+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of mina-sshd-api-core on behalf of elie1
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:16.018+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mina-sshd-api-core
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:16.684+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install mina-sshd-api-core
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Mina SSHD API :: Core (mina-sshd-api-core 2.14.0-143.v2b_362fc39576)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:  - Failed to load: Mina SSHD API :: Common (mina-sshd-api-common 2.14.0-143.v2b_362fc39576)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install mina-sshd-api-core plugin
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:16.687+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of structs on behalf of elie1
+Apr 02 11:44:16 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:16.688+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading structs
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:17.352+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install structs
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Structs Plugin (structs 338.v848422169819)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.414.3) or higher required
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install structs plugin
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:17.354+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials on behalf of elie1
+Apr 02 11:44:17 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:17.355+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:18.075+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install credentials
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Credentials Plugin (credentials 1380.va_435002fa_924)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:  - Failed to load: Structs Plugin (structs 338.v848422169819)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install credentials plugin
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:18.076+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of ssh-credentials on behalf of elie1
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:18.076+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ssh-credentials
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:18.607+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install ssh-credentials
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: SSH Credentials Plugin (ssh-credentials 349.vb_8b_6b_9709f5b_)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:  - Failed to load: Credentials Plugin (credentials 1380.va_435002fa_924)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.440.3) or higher required
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install ssh-credentials plugin
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:18.608+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of gson-api on behalf of elie1
+Apr 02 11:44:18 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:18.609+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading gson-api
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:19.192+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install gson-api
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Gson API Plugin (gson-api 2.11.0-41.v019fcf6125dc)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install gson-api plugin
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:19.193+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of git-client on behalf of elie1
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:19.193+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git-client
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:19.958+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install git-client
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Jenkins Git client plugin (git-client 5.0.3)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:  - Failed to load: Mina SSHD API :: Common (mina-sshd-api-common 2.14.0-143.v2b_362fc39576)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.440.3) or higher required
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install git-client plugin
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:19.960+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-step-api on behalf of elie1
+Apr 02 11:44:19 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:19.961+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-step-api
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:20.535+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install workflow-step-api
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Step API (workflow-step-api 678.v3ee58b_469476)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.414.3) or higher required
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:  - Failed to load: Structs Plugin (structs 338.v848422169819)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install workflow-step-api plugin
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:20.538+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of plain-credentials on behalf of elie1
+Apr 02 11:44:20 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:20.538+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading plain-credentials
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:21.044+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install plain-credentials
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Plain Credentials Plugin (plain-credentials 183.va_de8f1dd5a_2b_)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:  - Failed to load: Credentials Plugin (credentials 1380.va_435002fa_924)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install plain-credentials plugin
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:21.046+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials-binding on behalf of elie1
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:21.046+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials-binding
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:21.617+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install credentials-binding
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Credentials Binding Plugin (credentials-binding 681.vf91669a_32e45)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: Step API (workflow-step-api 678.v3ee58b_469476)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.414.3) or higher required
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install credentials-binding plugin
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:21.625+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-scm-step on behalf of elie1
+Apr 02 11:44:21 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:21.626+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-scm-step
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:22.154+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install workflow-scm-step
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: SCM Step (workflow-scm-step 427.v4ca_6512e7df1)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: Step API (workflow-step-api 678.v3ee58b_469476)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install workflow-scm-step plugin
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:22.157+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of asm-api on behalf of elie1
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:22.158+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading asm-api
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:22.749+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install asm-api
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: ASM API Plugin (asm-api 9.7.1-95.v9f552033802a_)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.440.3) or higher required
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install asm-api plugin
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:22.750+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of scm-api on behalf of elie1
+Apr 02 11:44:22 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:22.750+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading scm-api
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:23.301+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install scm-api
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: SCM API Plugin (scm-api 696.v778d637b_a_762)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:  - Failed to load: ASM API Plugin (asm-api 9.7.1-95.v9f552033802a_)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.426.3) or higher required
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install scm-api plugin
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:23.301+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of git on behalf of elie1
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:23.301+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:23.877+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install git
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Git plugin (git 5.5.2)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.440.3) or higher required
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: SCM Step (workflow-scm-step 427.v4ca_6512e7df1)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install git plugin
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:23.877+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-api on behalf of elie1
+Apr 02 11:44:23 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:23.878+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-api
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:24.486+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install workflow-api
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: API (workflow-api 1336.vee415d95c521)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: Step API (workflow-step-api 678.v3ee58b_469476)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.440.3) or higher required
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install workflow-api plugin
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:24.488+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-support on behalf of elie1
+Apr 02 11:44:24 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:24.488+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-support
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.119+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install workflow-support
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Supporting APIs (workflow-support 936.v9fa_77211ca_e1)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.440.3) or higher required
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: API (workflow-api 1336.vee415d95c521)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install workflow-support plugin
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.122+0000 [id=93]        INFO        h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-job on behalf of elie1
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.122+0000 [id=93]        INFO        h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-job
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.682+0000 [id=93]        SEVERE        h.model.UpdateCenter$DownloadJob#run: Failed to install workflow-job
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: java.io.IOException: Failed to load: Pipeline: Job (workflow-job 1400.v7fd111b_ec82f)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:  - Jenkins (2.440) or higher required
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:  - Failed to load: Pipeline: API (workflow-api 1336.vee415d95c521)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:994)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:948)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to install workflow-job plugin
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.PluginManager.dynamicLoad(PluginManager.java:962)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2200)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: Caused: java.io.IOException: Failed to dynamically deploy this plugin
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2204)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1850)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]:         at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.682+0000 [id=93]        INFO        h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.747+0000 [id=130]        INFO        jenkins.InitReactorRunner$1#onAttained: Started initialization
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.764+0000 [id=130]        INFO        jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.765+0000 [id=130]        INFO        jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.765+0000 [id=130]        INFO        jenkins.InitReactorRunner$1#onAttained: Started all plugins
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.766+0000 [id=130]        INFO        jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.766+0000 [id=130]        INFO        jenkins.InitReactorRunner$1#onAttained: System config loaded
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.766+0000 [id=131]        INFO        jenkins.InitReactorRunner$1#onAttained: System config adapted
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.767+0000 [id=131]        INFO        jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.767+0000 [id=131]        INFO        jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.767+0000 [id=131]        INFO        jenkins.InitReactorRunner$1#onAttained: Completed initialization
+Apr 02 11:44:25 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:44:25.768+0000 [id=93]        INFO        h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 0 plugins in 10 sec
+Apr 02 11:48:26 ip-172-31-7-33 systemd[1]: Stopping Jenkins Continuous Integration Server...
+-- Subject: A stop job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 5955.
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.217+0000 [id=24]        INFO        winstone.Logger#logInternal: JVM is terminating. Shutting down Jetty
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.224+0000 [id=24]        INFO        org.eclipse.jetty.server.Server#doStop: Stopped Server@35fc6dc4{STOPPING}[10.0.13,sto=0]
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.240+0000 [id=24]        INFO        o.e.j.server.AbstractConnector#doStop: Stopped ServerConnector@4e41089d{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.246+0000 [id=24]        INFO        hudson.lifecycle.Lifecycle#onStatusUpdate: Stopping Jenkins
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.264+0000 [id=24]        INFO        jenkins.model.Jenkins$16#onAttained: Started termination
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.283+0000 [id=24]        INFO        jenkins.model.Jenkins$16#onAttained: Completed termination
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.284+0000 [id=24]        INFO        jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.299+0000 [id=24]        INFO        jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.306+0000 [id=24]        INFO        jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.315+0000 [id=24]        INFO        jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.315+0000 [id=24]        INFO        hudson.lifecycle.Lifecycle#onStatusUpdate: Jenkins stopped
+Apr 02 11:48:26 ip-172-31-7-33 jenkins[488]: 2025-04-02 11:48:26.323+0000 [id=24]        INFO        o.e.j.s.handler.ContextHandler#doStop: Stopped w.@66238be2{Jenkins v2.400,/,null,STOPPED}{/var/cache/jenkins/war}
+Apr 02 11:48:26 ip-172-31-7-33 systemd[1]: jenkins.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has successfully entered the 'dead' state.
+Apr 02 11:48:26 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 5955 and the job result is done.
+Apr 02 11:48:26 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 5955.
+Apr 02 11:48:27 ip-172-31-7-33 jenkins[16274]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:27 ip-172-31-7-33 jenkins[16274]: Supported Java versions are: [17, 21]
+Apr 02 11:48:27 ip-172-31-7-33 jenkins[16274]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:27 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:27 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:27 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 5955 and the job result is failed.
+Apr 02 11:48:27 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 1.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:27 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 6041 and the job result is done.
+Apr 02 11:48:27 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 6041.
+Apr 02 11:48:28 ip-172-31-7-33 jenkins[16319]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:28 ip-172-31-7-33 jenkins[16319]: Supported Java versions are: [17, 21]
+Apr 02 11:48:28 ip-172-31-7-33 jenkins[16319]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:28 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:28 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:28 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 6041 and the job result is failed.
+Apr 02 11:48:28 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 2.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:28 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 6127 and the job result is done.
+Apr 02 11:48:28 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 6127.
+Apr 02 11:48:29 ip-172-31-7-33 jenkins[16402]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:29 ip-172-31-7-33 jenkins[16402]: Supported Java versions are: [17, 21]
+Apr 02 11:48:29 ip-172-31-7-33 jenkins[16402]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:29 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:29 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:29 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 6127 and the job result is failed.
+Apr 02 11:48:30 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 3.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:30 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 6301 and the job result is done.
+Apr 02 11:48:30 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 6301.
+Apr 02 11:48:31 ip-172-31-7-33 jenkins[16498]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:31 ip-172-31-7-33 jenkins[16498]: Supported Java versions are: [17, 21]
+Apr 02 11:48:31 ip-172-31-7-33 jenkins[16498]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:31 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:31 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:31 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 6301 and the job result is failed.
+Apr 02 11:48:32 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 4.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:32 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 6735 and the job result is done.
+Apr 02 11:48:32 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 6735.
+Apr 02 11:48:33 ip-172-31-7-33 jenkins[16645]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:33 ip-172-31-7-33 jenkins[16645]: Supported Java versions are: [17, 21]
+Apr 02 11:48:33 ip-172-31-7-33 jenkins[16645]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:33 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:33 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:33 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 6735 and the job result is failed.
+Apr 02 11:48:33 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 5.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:33 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 6995 and the job result is done.
+Apr 02 11:48:33 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 6995.
+Apr 02 11:48:34 ip-172-31-7-33 jenkins[16728]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:34 ip-172-31-7-33 jenkins[16728]: Supported Java versions are: [17, 21]
+Apr 02 11:48:34 ip-172-31-7-33 jenkins[16728]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:34 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:34 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:34 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 6995 and the job result is failed.
+Apr 02 11:48:34 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 6.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:34 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 7081 and the job result is done.
+Apr 02 11:48:34 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 7081.
+Apr 02 11:48:35 ip-172-31-7-33 jenkins[16822]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:35 ip-172-31-7-33 jenkins[16822]: Supported Java versions are: [17, 21]
+Apr 02 11:48:35 ip-172-31-7-33 jenkins[16822]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:35 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:35 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:35 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 7081 and the job result is failed.
+Apr 02 11:48:35 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 7.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:35 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 7167 and the job result is done.
+Apr 02 11:48:35 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 7167.
+Apr 02 11:48:37 ip-172-31-7-33 jenkins[16905]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:37 ip-172-31-7-33 jenkins[16905]: Supported Java versions are: [17, 21]
+Apr 02 11:48:37 ip-172-31-7-33 jenkins[16905]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:37 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:37 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:37 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 7167 and the job result is failed.
+Apr 02 11:48:37 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 8.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:37 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 7515 and the job result is done.
+Apr 02 11:48:37 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 7515.
+Apr 02 11:48:38 ip-172-31-7-33 jenkins[17006]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:38 ip-172-31-7-33 jenkins[17006]: Supported Java versions are: [17, 21]
+Apr 02 11:48:38 ip-172-31-7-33 jenkins[17006]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:38 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:38 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:38 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 7515 and the job result is failed.
+Apr 02 11:48:38 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 9.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:38 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 7601 and the job result is done.
+Apr 02 11:48:38 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 7601.
+Apr 02 11:48:39 ip-172-31-7-33 jenkins[17091]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:39 ip-172-31-7-33 jenkins[17091]: Supported Java versions are: [17, 21]
+Apr 02 11:48:39 ip-172-31-7-33 jenkins[17091]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:39 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:39 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:39 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 7601 and the job result is failed.
+Apr 02 11:48:39 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 10.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:39 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 7687 and the job result is done.
+Apr 02 11:48:39 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 7687.
+Apr 02 11:48:41 ip-172-31-7-33 jenkins[17153]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:41 ip-172-31-7-33 jenkins[17153]: Supported Java versions are: [17, 21]
+Apr 02 11:48:41 ip-172-31-7-33 jenkins[17153]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:41 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:41 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:41 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 7687 and the job result is failed.
+Apr 02 11:48:41 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 11.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:41 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 7955 and the job result is done.
+Apr 02 11:48:41 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 7955.
+Apr 02 11:48:42 ip-172-31-7-33 jenkins[17282]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:42 ip-172-31-7-33 jenkins[17282]: Supported Java versions are: [17, 21]
+Apr 02 11:48:42 ip-172-31-7-33 jenkins[17282]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:42 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:42 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:42 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 7955 and the job result is failed.
+Apr 02 11:48:43 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 12.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:43 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 8303 and the job result is done.
+Apr 02 11:48:43 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 8303.
+Apr 02 11:48:43 ip-172-31-7-33 jenkins[17391]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:43 ip-172-31-7-33 jenkins[17391]: Supported Java versions are: [17, 21]
+Apr 02 11:48:43 ip-172-31-7-33 jenkins[17391]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:44 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:44 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:44 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 8303 and the job result is failed.
+Apr 02 11:48:44 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 13.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:44 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 8477 and the job result is done.
+Apr 02 11:48:44 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 8477.
+Apr 02 11:48:45 ip-172-31-7-33 jenkins[17512]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:45 ip-172-31-7-33 jenkins[17512]: Supported Java versions are: [17, 21]
+Apr 02 11:48:45 ip-172-31-7-33 jenkins[17512]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:45 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:45 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:45 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 8477 and the job result is failed.
+Apr 02 11:48:45 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 14.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:45 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 8563 and the job result is done.
+Apr 02 11:48:45 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 8563.
+Apr 02 11:48:46 ip-172-31-7-33 jenkins[17591]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:46 ip-172-31-7-33 jenkins[17591]: Supported Java versions are: [17, 21]
+Apr 02 11:48:46 ip-172-31-7-33 jenkins[17591]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:46 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:46 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:46 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 8563 and the job result is failed.
+Apr 02 11:48:47 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 15.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:47 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 8824 and the job result is done.
+Apr 02 11:48:47 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 8824.
+Apr 02 11:48:48 ip-172-31-7-33 jenkins[17738]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:48 ip-172-31-7-33 jenkins[17738]: Supported Java versions are: [17, 21]
+Apr 02 11:48:48 ip-172-31-7-33 jenkins[17738]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:48 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:48 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:48 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 8824 and the job result is failed.
+Apr 02 11:48:48 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 16.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:48 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 9170 and the job result is done.
+Apr 02 11:48:48 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 9170.
+Apr 02 11:48:49 ip-172-31-7-33 jenkins[17823]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:49 ip-172-31-7-33 jenkins[17823]: Supported Java versions are: [17, 21]
+Apr 02 11:48:49 ip-172-31-7-33 jenkins[17823]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:49 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:49 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:49 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 9170 and the job result is failed.
+Apr 02 11:48:49 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 17.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:49 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 9256 and the job result is done.
+Apr 02 11:48:49 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 9256.
+Apr 02 11:48:50 ip-172-31-7-33 jenkins[18045]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:50 ip-172-31-7-33 jenkins[18045]: Supported Java versions are: [17, 21]
+Apr 02 11:48:50 ip-172-31-7-33 jenkins[18045]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:50 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:50 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:50 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 9256 and the job result is failed.
+Apr 02 11:48:51 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 18.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:51 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 9430 and the job result is done.
+Apr 02 11:48:51 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 9430.
+Apr 02 11:48:51 ip-172-31-7-33 jenkins[18173]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:51 ip-172-31-7-33 jenkins[18173]: Supported Java versions are: [17, 21]
+Apr 02 11:48:51 ip-172-31-7-33 jenkins[18173]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:51 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:51 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:51 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 9430 and the job result is failed.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 19.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 9516 and the job result is done.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 9516.
+Apr 02 11:48:52 ip-172-31-7-33 jenkins[18353]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:52 ip-172-31-7-33 jenkins[18353]: Supported Java versions are: [17, 21]
+Apr 02 11:48:52 ip-172-31-7-33 jenkins[18353]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 9516 and the job result is failed.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 20.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 9602 and the job result is done.
+Apr 02 11:48:52 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 9602.
+Apr 02 11:48:53 ip-172-31-7-33 jenkins[18391]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:53 ip-172-31-7-33 jenkins[18391]: Supported Java versions are: [17, 21]
+Apr 02 11:48:53 ip-172-31-7-33 jenkins[18391]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:53 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:53 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:53 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 9602 and the job result is failed.
+Apr 02 11:48:53 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 21.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:53 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 9688 and the job result is done.
+Apr 02 11:48:53 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 9688.
+Apr 02 11:48:54 ip-172-31-7-33 jenkins[18438]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:54 ip-172-31-7-33 jenkins[18438]: Supported Java versions are: [17, 21]
+Apr 02 11:48:54 ip-172-31-7-33 jenkins[18438]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:54 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:54 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:54 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 9688 and the job result is failed.
+Apr 02 11:48:54 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 22.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:54 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 9774 and the job result is done.
+Apr 02 11:48:54 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 9774.
+Apr 02 11:48:56 ip-172-31-7-33 jenkins[18516]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:56 ip-172-31-7-33 jenkins[18516]: Supported Java versions are: [17, 21]
+Apr 02 11:48:56 ip-172-31-7-33 jenkins[18516]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:56 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:56 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:56 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 9774 and the job result is failed.
+Apr 02 11:48:57 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 23.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:57 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 10036 and the job result is done.
+Apr 02 11:48:57 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 10036.
+Apr 02 11:48:57 ip-172-31-7-33 jenkins[18637]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:57 ip-172-31-7-33 jenkins[18637]: Supported Java versions are: [17, 21]
+Apr 02 11:48:57 ip-172-31-7-33 jenkins[18637]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:57 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:57 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:57 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 10036 and the job result is failed.
+Apr 02 11:48:58 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 24.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:58 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 10208 and the job result is done.
+Apr 02 11:48:58 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 10208.
+Apr 02 11:48:59 ip-172-31-7-33 jenkins[18701]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:48:59 ip-172-31-7-33 jenkins[18701]: Supported Java versions are: [17, 21]
+Apr 02 11:48:59 ip-172-31-7-33 jenkins[18701]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:48:59 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:48:59 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:48:59 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 10208 and the job result is failed.
+Apr 02 11:48:59 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 25.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:48:59 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 10642 and the job result is done.
+Apr 02 11:48:59 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 10642.
+Apr 02 11:49:00 ip-172-31-7-33 jenkins[18835]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:49:00 ip-172-31-7-33 jenkins[18835]: Supported Java versions are: [17, 21]
+Apr 02 11:49:00 ip-172-31-7-33 jenkins[18835]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:49:00 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:49:00 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:00 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 10642 and the job result is failed.
+Apr 02 11:49:01 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 26.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:49:01 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 10902 and the job result is done.
+Apr 02 11:49:01 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 10902.
+Apr 02 11:49:02 ip-172-31-7-33 jenkins[18936]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:49:02 ip-172-31-7-33 jenkins[18936]: Supported Java versions are: [17, 21]
+Apr 02 11:49:02 ip-172-31-7-33 jenkins[18936]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:49:02 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:49:02 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:02 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 10902 and the job result is failed.
+Apr 02 11:49:02 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 27.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:49:02 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 11089 and the job result is done.
+Apr 02 11:49:02 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 11089.
+Apr 02 11:49:03 ip-172-31-7-33 jenkins[19172]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:49:03 ip-172-31-7-33 jenkins[19172]: Supported Java versions are: [17, 21]
+Apr 02 11:49:03 ip-172-31-7-33 jenkins[19172]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:49:03 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:49:03 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:03 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 11089 and the job result is failed.
+Apr 02 11:49:03 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 28.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:49:03 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 11175 and the job result is done.
+Apr 02 11:49:03 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 11175.
+Apr 02 11:49:04 ip-172-31-7-33 jenkins[19332]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:49:04 ip-172-31-7-33 jenkins[19332]: Supported Java versions are: [17, 21]
+Apr 02 11:49:04 ip-172-31-7-33 jenkins[19332]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:49:04 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:49:04 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:04 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 11175 and the job result is failed.
+Apr 02 11:49:04 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 29.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:49:04 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 11261 and the job result is done.
+Apr 02 11:49:04 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 11261.
+Apr 02 11:49:05 ip-172-31-7-33 jenkins[19591]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:49:05 ip-172-31-7-33 jenkins[19591]: Supported Java versions are: [17, 21]
+Apr 02 11:49:05 ip-172-31-7-33 jenkins[19591]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:49:05 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:49:05 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:05 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 11261 and the job result is failed.
+Apr 02 11:49:05 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 30.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:49:05 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 11347 and the job result is done.
+Apr 02 11:49:05 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 11347.
+Apr 02 11:49:06 ip-172-31-7-33 jenkins[20270]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:49:06 ip-172-31-7-33 jenkins[20270]: Supported Java versions are: [17, 21]
+Apr 02 11:49:06 ip-172-31-7-33 jenkins[20270]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:49:06 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:49:06 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:06 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 11347 and the job result is failed.
+Apr 02 11:49:06 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 31.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:49:06 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 11433 and the job result is done.
+Apr 02 11:49:06 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 11433.
+Apr 02 11:49:07 ip-172-31-7-33 jenkins[20341]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:49:07 ip-172-31-7-33 jenkins[20341]: Supported Java versions are: [17, 21]
+Apr 02 11:49:07 ip-172-31-7-33 jenkins[20341]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 11433 and the job result is failed.
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 32.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 11519 and the job result is done.
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Start request repeated too quickly.[0m
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:49:07 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 11519 and the job result is failed.
+Apr 02 11:52:09 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 14313.
+Apr 02 11:52:10 ip-172-31-7-33 jenkins[42569]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:52:10 ip-172-31-7-33 jenkins[42569]: Supported Java versions are: [17, 21]
+Apr 02 11:52:10 ip-172-31-7-33 jenkins[42569]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:52:10 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:52:10 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:52:10 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 14313 and the job result is failed.
+Apr 02 11:52:10 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 1.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:52:10 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 14399 and the job result is done.
+Apr 02 11:52:10 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 14399.
+Apr 02 11:52:11 ip-172-31-7-33 jenkins[42608]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:52:11 ip-172-31-7-33 jenkins[42608]: Supported Java versions are: [17, 21]
+Apr 02 11:52:11 ip-172-31-7-33 jenkins[42608]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 14399 and the job result is failed.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 2.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 14485 and the job result is done.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 14485.
+Apr 02 11:52:11 ip-172-31-7-33 jenkins[42655]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:52:11 ip-172-31-7-33 jenkins[42655]: Supported Java versions are: [17, 21]
+Apr 02 11:52:11 ip-172-31-7-33 jenkins[42655]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:52:11 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 14485 and the job result is failed.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 3.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 14571 and the job result is done.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 14571.
+Apr 02 11:52:12 ip-172-31-7-33 jenkins[42696]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:52:12 ip-172-31-7-33 jenkins[42696]: Supported Java versions are: [17, 21]
+Apr 02 11:52:12 ip-172-31-7-33 jenkins[42696]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 14571 and the job result is failed.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 4.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 14657 and the job result is done.
+Apr 02 11:52:12 ip-172-31-7-33 systemd[1]: Starting Jenkins Continuous Integration Server...
+-- Subject: A start job for unit jenkins.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has begun execution.
+-- 
+-- The job identifier is 14657.
+Apr 02 11:52:13 ip-172-31-7-33 jenkins[42734]: Running with Java 11 from /usr/lib/jvm/java-11-openjdk-amd64, which is older than the minimum required version (Java 17).
+Apr 02 11:52:13 ip-172-31-7-33 jenkins[42734]: Supported Java versions are: [17, 21]
+Apr 02 11:52:13 ip-172-31-7-33 jenkins[42734]: See https://jenkins.io/redirect/java-support/ for more information.
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: [0;1;39m[0;1;31m[0;1;39mjenkins.service: Main process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit jenkins.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 14657 and the job result is failed.
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 5.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: Stopped Jenkins Continuous Integration Server.
+-- Subject: A stop job for unit jenkins.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit jenkins.service has finished.
+-- 
+-- The job identifier is 14743 and the job result is done.
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Start request repeated too quickly.[0m
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mjenkins.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Apr 02 11:52:13 ip-172-31-7-33 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Jenkins Continuous Integration Server.[0m
+-- Subject: A start job for unit jenkins.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit jenkins.service has finished with a failure.
+-- 
+-- The job identifier is 14743 and the job result is failed.
