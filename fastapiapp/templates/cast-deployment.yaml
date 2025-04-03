@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-cast-service
+  labels:
+    app: cast-service
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    release: {{ .Release.Name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cast-service
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: cast-service
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: cast-service
+        image: "{{ .Values.images.cast_service.repository }}:{{ .Values.images.cast_service.tag }}"
+        imagePullPolicy: {{ .Values.images.cast_service.pullPolicy }}
+        command: ["uvicorn", "app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+        ports:
+        - containerPort: {{ .Values.services.cast_service.port }}
+        env:
+        - name: DATABASE_URI
+          value: postgresql://{{ .Values.databases.cast_db.user }}:{{ .Values.databases.cast_db.password }}@{{ .Release.Name }}-cast-db/{{ .Values.databases.cast_db.database }}
+        resources:
+          requests:
+            cpu: {{ .Values.resources.cast_service.requests.cpu }}
+            memory: {{ .Values.resources.cast_service.requests.memory }}
+          limits:
+            cpu: {{ .Values.resources.cast_service.limits.cpu }}
+            memory: {{ .Values.resources.cast_service.limits.memory }}
+        volumeMounts:
+        - name: cast-service-code
+          mountPath: /app
+      volumes:
+      - name: cast-service-code
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-cast-service
+  labels:
+    app: cast-service
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    release: {{ .Release.Name }}
+spec:
+  type: {{ .Values.services.cast_service.type }}
+  ports:
+  - port: {{ .Values.services.cast_service.port }}
+    targetPort: {{ .Values.services.cast_service.port }}
+    {{- if eq .Values.services.cast_service.type "NodePort" }}
+    nodePort: {{ .Values.services.cast_service.nodePort }}
+    {{- end }}
+  selector:
+    app: cast-service
+    release: {{ .Release.Name }}

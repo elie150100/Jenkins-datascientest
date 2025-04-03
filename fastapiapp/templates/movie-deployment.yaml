@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-movie-service
+  labels:
+    app: movie-service
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    release: {{ .Release.Name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movie-service
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: movie-service
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: movie-service
+        image: "{{ .Values.images.movie_service.repository }}:{{ .Values.images.movie_service.tag }}"
+        imagePullPolicy: {{ .Values.images.movie_service.pullPolicy }}
+        command: ["uvicorn", "app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+        ports:
+        - containerPort: {{ .Values.services.movie_service.port }}
+        env:
+        - name: DATABASE_URI
+          value: postgresql://{{ .Values.databases.movie_db.user }}:{{ .Values.databases.movie_db.password }}@{{ .Release.Name }}-movie-db/{{ .Values.databases.movie_db.database }}
+        - name: CAST_SERVICE_HOST_URL
+          value: http://{{ .Release.Name }}-cast-service:{{ .Values.services.cast_service.port }}/api/v1/casts/
+        resources:
+          requests:
+            cpu: {{ .Values.resources.movie_service.requests.cpu }}
+            memory: {{ .Values.resources.movie_service.requests.memory }}
+          limits:
+            cpu: {{ .Values.resources.movie_service.limits.cpu }}
+            memory: {{ .Values.resources.movie_service.limits.memory }}
+        volumeMounts:
+        - name: movie-service-code
+          mountPath: /app
+      volumes:
+      - name: movie-service-code
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-movie-service
+  labels:
+    app: movie-service
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    release: {{ .Release.Name }}
+spec:
+  type: {{ .Values.services.movie_service.type }}
+  ports:
+  - port: {{ .Values.services.movie_service.port }}
+    targetPort: {{ .Values.services.movie_service.port }}
+    {{- if eq .Values.services.movie_service.type "NodePort" }}
+    nodePort: {{ .Values.services.movie_service.nodePort }}
+    {{- end }}
+  selector:
+    app: movie-service
+    release: {{ .Release.Name }}

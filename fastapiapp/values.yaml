@@ -1,0 +1,88 @@
+# Configuration globale
+global:
+  environment: dev
+
+# Configuration des images
+images:
+  movie_service:
+    repository: movie-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  cast_service:
+    repository: cast-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  postgres:
+    repository: postgres
+    tag: 12.1-alpine
+    pullPolicy: IfNotPresent
+  nginx:
+    repository: nginx
+    tag: latest
+    pullPolicy: IfNotPresent
+
+# Configuration des services
+services:
+  movie_service:
+    port: 8000
+    nodePort: 30001
+    type: ClusterIP
+  cast_service:
+    port: 8000
+    nodePort: 30002
+    type: ClusterIP
+  nginx:
+    port: 8080
+    nodePort: 30000
+    type: LoadBalancer
+
+# Configuration des bases de données
+databases:
+  movie_db:
+    user: movie_db_username
+    password: movie_db_password
+    database: movie_db_dev
+    storage: 1Gi
+  cast_db:
+    user: cast_db_username
+    password: cast_db_password
+    database: cast_db_dev
+    storage: 1Gi
+
+# Configuration des ressources
+resources:
+  movie_service:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 200m
+      memory: 256Mi
+  cast_service:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 200m
+      memory: 256Mi
+  movie_db:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 300m
+      memory: 512Mi
+  cast_db:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 300m
+      memory: 512Mi
+  nginx:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 100m
+      memory: 128Mi

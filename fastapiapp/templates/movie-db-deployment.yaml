@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-movie-db
+  labels:
+    app: movie-db
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    release: {{ .Release.Name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movie-db
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: movie-db
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: movie-db
+        image: "{{ .Values.images.postgres.repository }}:{{ .Values.images.postgres.tag }}"
+        imagePullPolicy: {{ .Values.images.postgres.pullPolicy }}
+        ports:
+        - containerPort: 5432
+        env:
+        - name: POSTGRES_USER
+          value: {{ .Values.databases.movie_db.user }}
+        - name: POSTGRES_PASSWORD
+          value: {{ .Values.databases.movie_db.password }}
+        - name: POSTGRES_DB
+          value: {{ .Values.databases.movie_db.database }}
+        resources:
+          requests:
+            cpu: {{ .Values.resources.movie_db.requests.cpu }}
+            memory: {{ .Values.resources.movie_db.requests.memory }}
+          limits:
+            cpu: {{ .Values.resources.movie_db.limits.cpu }}
+            memory: {{ .Values.resources.movie_db.limits.memory }}
+        volumeMounts:
+        - name: movie-db-data
+          mountPath: /var/lib/postgresql/data/
+      volumes:
+      - name: movie-db-data
+        persistentVolumeClaim:
+          claimName: {{ .Release.Name }}-movie-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-movie-db
+  labels:
+    app: movie-db
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    release: {{ .Release.Name }}
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5432
+    targetPort: 5432
+  selector:
+    app: movie-db
+    release: {{ .Release.Name }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Release.Name }}-movie-db-pvc
+  labels:
+    app: movie-db
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    release: {{ .Release.Name }}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.databases.movie_db.storage }}
